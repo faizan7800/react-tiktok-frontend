@@ -1,0 +1,160 @@
+[debug] [2022-10-17T16:04:01.161Z] ----------------------------------------------------------------------
+[debug] [2022-10-17T16:04:01.170Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HASSAN LAPTOPS STORE\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-17T16:04:01.172Z] CLI Version:   11.14.4
+[debug] [2022-10-17T16:04:01.172Z] Platform:      win32
+[debug] [2022-10-17T16:04:01.173Z] Node Version:  v16.17.0
+[debug] [2022-10-17T16:04:01.176Z] Time:          Mon Oct 17 2022 21:04:01 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-10-17T16:04:01.176Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-17T16:04:01.468Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-17T16:04:01.469Z] > authorizing via signed-in user (faiza.mahn122@gmail.com)
+[debug] [2022-10-17T16:04:01.470Z] [iam] checking project faizan-tiktok-clone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-17T16:04:01.479Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/faizan-tiktok-clone:testIamPermissions [none]
+[debug] [2022-10-17T16:04:01.483Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/faizan-tiktok-clone:testIamPermissions x-goog-quota-user=projects/faizan-tiktok-clone
+[debug] [2022-10-17T16:04:01.484Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faizan-tiktok-clone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-17T16:04:03.671Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/faizan-tiktok-clone:testIamPermissions 200
+[debug] [2022-10-17T16:04:03.672Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faizan-tiktok-clone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-17T16:04:03.674Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/faizan-tiktok-clone [none]
+[debug] [2022-10-17T16:04:04.534Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/faizan-tiktok-clone 200
+[debug] [2022-10-17T16:04:04.535Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/faizan-tiktok-clone {"projectId":"faizan-tiktok-clone","projectNumber":"222684341454","displayName":"faizan-tiktok-clone","name":"projects/faizan-tiktok-clone","resources":{"hostingSite":"faizan-tiktok-clone"},"state":"ACTIVE","etag":"1_ab46eadf-5516-4040-a083-b86e0f30996b"}
+[info] 
+[info] === Deploying to 'faizan-tiktok-clone'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-10-17T16:04:04.555Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/versions [none]
+[debug] [2022-10-17T16:04:04.556Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-10-17T16:04:07.241Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/versions 200
+[debug] [2022-10-17T16:04:07.241Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/versions {"name":"projects/222684341454/sites/faizan-tiktok-clone/versions/c79d71b601a104d0","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[faizan-tiktok-clone]: beginning deploy... 
+[info] i  hosting[faizan-tiktok-clone]: found 14 files in build 
+[debug] [2022-10-17T16:04:07.266Z] [hosting] uploading with 200 concurrency
+[debug] [2022-10-17T16:04:07.269Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2022-10-17T16:04:07.593Z] [hosting] hash cache [YnVpbGQ] stored for 14 files
+[debug] [2022-10-17T16:04:07.593Z] [hosting][hash queue][FINAL] {"max":300,"min":40,"avg":64.57142857142857,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":320}
+[debug] [2022-10-17T16:04:07.594Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/222684341454/sites/faizan-tiktok-clone/versions/c79d71b601a104d0:populateFiles [none]
+[debug] [2022-10-17T16:04:07.594Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/222684341454/sites/faizan-tiktok-clone/versions/c79d71b601a104d0:populateFiles {"files":{"/asset-manifest.json":"4d038b27a92a0cdd0c8b04108963ec3f91920e82ebb8db5fa313f7e2dc92fae3","/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/index.html":"ef4eea06be8f7e5d4fd8a6e547e021ed4cb5b6ec4a96730453fa286114ffa395","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/static/css/main.f01f1fb0.css":"669ce577a326c2987c7ef3fc53df02e592fb19fb37f10aca51c70b0c50ec83d6","/static/css/main.f01f1fb0.css.map":"ad8f7640e0dc2158fca4f60ca07e3fe3d1333a1dc30e61acc79ff8fa0f971bc8","/static/js/787.c7aafdec.chunk.js":"c896c259a480fc8371d3eb64f34d7b6de3dd272227db24ddef8a926115742e49","/static/js/787.c7aafdec.chunk.js.map":"240eab27839bf1c4b9b30e91aab1b4a3a4b16d27650d94c01dd712282dbcfdab","/static/js/main.a36e8140.js.LICENSE.txt":"9d7c543f50868755056d14bcdb5b6a51db9a17ae0ac808ccb9d6efdd0d24ff5b","/static/js/main.a36e8140.js":"6a6fbb9555aa85e3a508e3a7088a10e9760379925b43e3756e0ede3a61ec5a6b","/static/js/main.a36e8140.js.map":"b7bb5b96e27ad551f88251b285aff045a2b0befba78027aece2d480a69050640"}}
+[debug] [2022-10-17T16:04:09.524Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/222684341454/sites/faizan-tiktok-clone/versions/c79d71b601a104d0:populateFiles 200
+[debug] [2022-10-17T16:04:09.524Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/222684341454/sites/faizan-tiktok-clone/versions/c79d71b601a104d0:populateFiles {"uploadRequiredHashes":["240eab27839bf1c4b9b30e91aab1b4a3a4b16d27650d94c01dd712282dbcfdab","eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","c896c259a480fc8371d3eb64f34d7b6de3dd272227db24ddef8a926115742e49","9d7c543f50868755056d14bcdb5b6a51db9a17ae0ac808ccb9d6efdd0d24ff5b","ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","ef4eea06be8f7e5d4fd8a6e547e021ed4cb5b6ec4a96730453fa286114ffa395","6a6fbb9555aa85e3a508e3a7088a10e9760379925b43e3756e0ede3a61ec5a6b","b7bb5b96e27ad551f88251b285aff045a2b0befba78027aece2d480a69050640","3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","4d038b27a92a0cdd0c8b04108963ec3f91920e82ebb8db5fa313f7e2dc92fae3","bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","ad8f7640e0dc2158fca4f60ca07e3fe3d1333a1dc30e61acc79ff8fa0f971bc8","669ce577a326c2987c7ef3fc53df02e592fb19fb37f10aca51c70b0c50ec83d6"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files"}
+[debug] [2022-10-17T16:04:09.529Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/240eab27839bf1c4b9b30e91aab1b4a3a4b16d27650d94c01dd712282dbcfdab [none]
+[debug] [2022-10-17T16:04:09.529Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/240eab27839bf1c4b9b30e91aab1b4a3a4b16d27650d94c01dd712282dbcfdab [stream]
+[debug] [2022-10-17T16:04:09.532Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 [none]
+[debug] [2022-10-17T16:04:09.532Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 [stream]
+[debug] [2022-10-17T16:04:09.536Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [none]
+[debug] [2022-10-17T16:04:09.536Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2022-10-17T16:04:09.538Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/c896c259a480fc8371d3eb64f34d7b6de3dd272227db24ddef8a926115742e49 [none]
+[debug] [2022-10-17T16:04:09.538Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/c896c259a480fc8371d3eb64f34d7b6de3dd272227db24ddef8a926115742e49 [stream]
+[debug] [2022-10-17T16:04:09.539Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/9d7c543f50868755056d14bcdb5b6a51db9a17ae0ac808ccb9d6efdd0d24ff5b [none]
+[debug] [2022-10-17T16:04:09.539Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/9d7c543f50868755056d14bcdb5b6a51db9a17ae0ac808ccb9d6efdd0d24ff5b [stream]
+[debug] [2022-10-17T16:04:09.541Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [none]
+[debug] [2022-10-17T16:04:09.541Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2022-10-17T16:04:09.543Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ef4eea06be8f7e5d4fd8a6e547e021ed4cb5b6ec4a96730453fa286114ffa395 [none]
+[debug] [2022-10-17T16:04:09.543Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ef4eea06be8f7e5d4fd8a6e547e021ed4cb5b6ec4a96730453fa286114ffa395 [stream]
+[debug] [2022-10-17T16:04:09.545Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/6a6fbb9555aa85e3a508e3a7088a10e9760379925b43e3756e0ede3a61ec5a6b [none]
+[debug] [2022-10-17T16:04:09.545Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/6a6fbb9555aa85e3a508e3a7088a10e9760379925b43e3756e0ede3a61ec5a6b [stream]
+[debug] [2022-10-17T16:04:09.548Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/b7bb5b96e27ad551f88251b285aff045a2b0befba78027aece2d480a69050640 [none]
+[debug] [2022-10-17T16:04:09.549Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/b7bb5b96e27ad551f88251b285aff045a2b0befba78027aece2d480a69050640 [stream]
+[debug] [2022-10-17T16:04:09.551Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [none]
+[debug] [2022-10-17T16:04:09.552Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2022-10-17T16:04:09.554Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/4d038b27a92a0cdd0c8b04108963ec3f91920e82ebb8db5fa313f7e2dc92fae3 [none]
+[debug] [2022-10-17T16:04:09.554Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/4d038b27a92a0cdd0c8b04108963ec3f91920e82ebb8db5fa313f7e2dc92fae3 [stream]
+[debug] [2022-10-17T16:04:09.556Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [none]
+[debug] [2022-10-17T16:04:09.557Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2022-10-17T16:04:09.558Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ad8f7640e0dc2158fca4f60ca07e3fe3d1333a1dc30e61acc79ff8fa0f971bc8 [none]
+[debug] [2022-10-17T16:04:09.558Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ad8f7640e0dc2158fca4f60ca07e3fe3d1333a1dc30e61acc79ff8fa0f971bc8 [stream]
+[debug] [2022-10-17T16:04:09.559Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/669ce577a326c2987c7ef3fc53df02e592fb19fb37f10aca51c70b0c50ec83d6 [none]
+[debug] [2022-10-17T16:04:09.559Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/669ce577a326c2987c7ef3fc53df02e592fb19fb37f10aca51c70b0c50ec83d6 [stream]
+[debug] [2022-10-17T16:04:09.561Z] [hosting][populate queue][FINAL] {"max":1939,"min":1939,"avg":1939,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1972}
+[debug] [2022-10-17T16:04:09.561Z] [hosting] uploads queued: 14
+[debug] [2022-10-17T16:04:11.236Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/9d7c543f50868755056d14bcdb5b6a51db9a17ae0ac808ccb9d6efdd0d24ff5b 200
+[debug] [2022-10-17T16:04:11.237Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/9d7c543f50868755056d14bcdb5b6a51db9a17ae0ac808ccb9d6efdd0d24ff5b [stream]
+[debug] [2022-10-17T16:04:11.338Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 200
+[debug] [2022-10-17T16:04:11.338Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 [stream]
+[debug] [2022-10-17T16:04:11.343Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 200
+[debug] [2022-10-17T16:04:11.343Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2022-10-17T16:04:11.353Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a 200
+[debug] [2022-10-17T16:04:11.353Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2022-10-17T16:04:11.465Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/c896c259a480fc8371d3eb64f34d7b6de3dd272227db24ddef8a926115742e49 200
+[debug] [2022-10-17T16:04:11.465Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/c896c259a480fc8371d3eb64f34d7b6de3dd272227db24ddef8a926115742e49 [stream]
+[debug] [2022-10-17T16:04:11.474Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 200
+[debug] [2022-10-17T16:04:11.475Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2022-10-17T16:04:11.602Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b 200
+[debug] [2022-10-17T16:04:11.602Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2022-10-17T16:04:11.753Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/669ce577a326c2987c7ef3fc53df02e592fb19fb37f10aca51c70b0c50ec83d6 200
+[debug] [2022-10-17T16:04:11.754Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/669ce577a326c2987c7ef3fc53df02e592fb19fb37f10aca51c70b0c50ec83d6 [stream]
+[debug] [2022-10-17T16:04:11.815Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/240eab27839bf1c4b9b30e91aab1b4a3a4b16d27650d94c01dd712282dbcfdab 200
+[debug] [2022-10-17T16:04:11.816Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/240eab27839bf1c4b9b30e91aab1b4a3a4b16d27650d94c01dd712282dbcfdab [stream]
+[debug] [2022-10-17T16:04:11.944Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/b7bb5b96e27ad551f88251b285aff045a2b0befba78027aece2d480a69050640 200
+[debug] [2022-10-17T16:04:11.944Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/b7bb5b96e27ad551f88251b285aff045a2b0befba78027aece2d480a69050640 [stream]
+[debug] [2022-10-17T16:04:12.037Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ad8f7640e0dc2158fca4f60ca07e3fe3d1333a1dc30e61acc79ff8fa0f971bc8 200
+[debug] [2022-10-17T16:04:12.037Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ad8f7640e0dc2158fca4f60ca07e3fe3d1333a1dc30e61acc79ff8fa0f971bc8 [stream]
+[debug] [2022-10-17T16:04:12.196Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/4d038b27a92a0cdd0c8b04108963ec3f91920e82ebb8db5fa313f7e2dc92fae3 200
+[debug] [2022-10-17T16:04:12.196Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/4d038b27a92a0cdd0c8b04108963ec3f91920e82ebb8db5fa313f7e2dc92fae3 [stream]
+[debug] [2022-10-17T16:04:12.205Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/6a6fbb9555aa85e3a508e3a7088a10e9760379925b43e3756e0ede3a61ec5a6b 200
+[debug] [2022-10-17T16:04:12.206Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/6a6fbb9555aa85e3a508e3a7088a10e9760379925b43e3756e0ede3a61ec5a6b [stream]
+[debug] [2022-10-17T16:04:12.326Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ef4eea06be8f7e5d4fd8a6e547e021ed4cb5b6ec4a96730453fa286114ffa395 200
+[debug] [2022-10-17T16:04:12.326Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/faizan-tiktok-clone/versions/c79d71b601a104d0/files/ef4eea06be8f7e5d4fd8a6e547e021ed4cb5b6ec4a96730453fa286114ffa395 [stream]
+[debug] [2022-10-17T16:04:12.327Z] [hosting][upload queue][FINAL] {"max":2800,"min":1711,"avg":2194.642857142857,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":2803}
+[info] +  hosting[faizan-tiktok-clone]: file upload complete 
+[debug] [2022-10-17T16:04:12.330Z] [hosting] deploy completed after 5086ms
+[debug] [2022-10-17T16:04:12.369Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "faizan-tiktok-clone"
+    },
+    "version": "projects/222684341454/sites/faizan-tiktok-clone/versions/c79d71b601a104d0"
+  }
+]
+[info] i  hosting[faizan-tiktok-clone]: finalizing version... 
+[debug] [2022-10-17T16:04:12.382Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/versions/c79d71b601a104d0 updateMask=status%2Cconfig
+[debug] [2022-10-17T16:04:12.383Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/versions/c79d71b601a104d0 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-10-17T16:04:14.524Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/versions/c79d71b601a104d0 200
+[debug] [2022-10-17T16:04:14.524Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/versions/c79d71b601a104d0 {"name":"projects/222684341454/sites/faizan-tiktok-clone/versions/c79d71b601a104d0","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-10-17T16:04:07.740990Z","createUser":{"email":"faiza.mahn122@gmail.com"},"finalizeTime":"2022-10-17T16:04:15.483415Z","finalizeUser":{"email":"faiza.mahn122@gmail.com"}}
+[debug] [2022-10-17T16:04:14.525Z] [hosting] finalized version for faizan-tiktok-clone:[object Object]
+[info] +  hosting[faizan-tiktok-clone]: version finalized 
+[info] i  hosting[faizan-tiktok-clone]: releasing new version... 
+[debug] [2022-10-17T16:04:14.530Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/channels/live/releases versionName=projects%2F222684341454%2Fsites%2Ffaizan-tiktok-clone%2Fversions%2Fc79d71b601a104d0
+[debug] [2022-10-17T16:04:14.540Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/channels/live/releases {}
+[debug] [2022-10-17T16:04:18.470Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/channels/live/releases 200
+[debug] [2022-10-17T16:04:18.471Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/faizan-tiktok-clone/channels/live/releases {"name":"projects/222684341454/sites/faizan-tiktok-clone/channels/live/releases/1666022658558748","version":{"name":"projects/222684341454/sites/faizan-tiktok-clone/versions/c79d71b601a104d0","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-10-17T16:04:07.740990Z","createUser":{"email":"faiza.mahn122@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu2o2mt_VhvtVgsxXtiGZjEasC9oXP6SMxhp-O0F"},"finalizeTime":"2022-10-17T16:04:15.483415Z","finalizeUser":{"email":"faiza.mahn122@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu2o2mt_VhvtVgsxXtiGZjEasC9oXP6SMxhp-O0F"}},"type":"DEPLOY","releaseTime":"2022-10-17T16:04:18.558748934Z","releaseUser":{"email":"faiza.mahn122@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu2o2mt_VhvtVgsxXtiGZjEasC9oXP6SMxhp-O0F"}}
+[debug] [2022-10-17T16:04:18.472Z] [hosting] release: {"name":"projects/222684341454/sites/faizan-tiktok-clone/channels/live/releases/1666022658558748","version":{"name":"projects/222684341454/sites/faizan-tiktok-clone/versions/c79d71b601a104d0","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-10-17T16:04:07.740990Z","createUser":{"email":"faiza.mahn122@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu2o2mt_VhvtVgsxXtiGZjEasC9oXP6SMxhp-O0F"},"finalizeTime":"2022-10-17T16:04:15.483415Z","finalizeUser":{"email":"faiza.mahn122@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu2o2mt_VhvtVgsxXtiGZjEasC9oXP6SMxhp-O0F"}},"type":"DEPLOY","releaseTime":"2022-10-17T16:04:18.558748934Z","releaseUser":{"email":"faiza.mahn122@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu2o2mt_VhvtVgsxXtiGZjEasC9oXP6SMxhp-O0F"}}
+[info] +  hosting[faizan-tiktok-clone]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/faizan-tiktok-clone/overview
+[info] Hosting URL: https://faizan-tiktok-clone.web.app
+[debug] [2022-10-17T16:04:25.280Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\HASSAN LAPTOPS STORE\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-17T16:05:23.021Z] ----------------------------------------------------------------------
+[debug] [2022-10-17T16:05:23.024Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HASSAN LAPTOPS STORE\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-17T16:05:23.024Z] CLI Version:   11.14.4
+[debug] [2022-10-17T16:05:23.025Z] Platform:      win32
+[debug] [2022-10-17T16:05:23.025Z] Node Version:  v16.17.0
+[debug] [2022-10-17T16:05:23.026Z] Time:          Mon Oct 17 2022 21:05:23 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-10-17T16:05:23.026Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-17T16:05:23.133Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-17T16:05:23.134Z] > authorizing via signed-in user (faiza.mahn122@gmail.com)
+[debug] [2022-10-17T16:05:23.134Z] [iam] checking project faizan-tiktok-clone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-17T16:05:23.138Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/faizan-tiktok-clone:testIamPermissions [none]
+[debug] [2022-10-17T16:05:23.138Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/faizan-tiktok-clone:testIamPermissions x-goog-quota-user=projects/faizan-tiktok-clone
+[debug] [2022-10-17T16:05:23.138Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faizan-tiktok-clone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-17T16:05:25.745Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/faizan-tiktok-clone:testIamPermissions 200
+[debug] [2022-10-17T16:05:25.746Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faizan-tiktok-clone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-17T16:05:25.750Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/faizan-tiktok-clone [none]
